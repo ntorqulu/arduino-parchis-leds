@@ -34,14 +34,14 @@ const byte GLYPH_START[8] = {
 };
 
 const byte GLYPH_2[8] = {
-  0b00111100,
-  0b01000010,
-  0b00000010,
-  0b00001100,
-  0b00110000,
-  0b01000000,
-  0b01111110,
-  0b00000000
+  0b01100110,  // row 0 — top-left + top-right dots
+  0b01100110,  // row 1
+  0b00000000,  // row 2
+  0b00000000,  // row 3
+  0b00000000,  // row 4
+  0b00000000,  // row 5
+  0b01100110,  // row 6 — bottom-left + bottom-right dots
+  0b01100110   // row 7
 };
 
 void showGlyph(const byte* g) {
